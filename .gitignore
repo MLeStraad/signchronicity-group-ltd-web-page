@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+build/
+dev_server.log
+server.log
+production_server.log
+.env*.local
+.vercel
+*.png
+*.webm
+verification/screenshots/
+verification/videos/
