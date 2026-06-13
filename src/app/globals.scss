@@ -1,0 +1,49 @@
+@import 'nhsuk-frontend/packages/nhsuk';
+
+$signchronicity-navy: #002f5c;
+$signchronicity-yellow: #ffeb3b;
+
+:root {
+  --nhsuk-blue: #005eb8;
+  --signchronicity-navy: #002f5c;
+  --signchronicity-yellow: #ffeb3b;
+}
+
+body {
+  font-family: 'Frutiger', 'Open Sans', Arial, sans-serif;
+}
+
+.nhsuk-header {
+  border-bottom: 4px solid $signchronicity-yellow;
+}
+
+.nhsuk-header__navigation {
+  background-color: $signchronicity-navy;
+}
+
+.nhsuk-hero {
+  background-color: $signchronicity-navy;
+  color: #ffffff;
+  .nhsuk-hero__heading, .nhsuk-hero__text {
+    color: #ffffff;
+  }
+}
+
+.nhsuk-card {
+  border-top: 4px solid $signchronicity-navy;
+  &--clickable:hover {
+    border-top-color: $signchronicity-yellow;
+    background-color: #f0f4f5;
+  }
+}
+
+@keyframes rapid-alert {
+  0% { background-color: #ffeb3b; }
+  50% { background-color: #d4351c; }
+  100% { background-color: #ffeb3b; }
+}
+
+.nhs-focus:focus {
+  outline: 4px solid $signchronicity-yellow !important;
+  box-shadow: 0 0 0 4px #212b32 !important;
+}
